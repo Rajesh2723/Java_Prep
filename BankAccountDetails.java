@@ -7,5 +7,7 @@ public class BankAccountDetails {
         en.Deposit(300);
 
         System.out.println(en.getBlance());
+
+        en.setBalance(-500);
     }   
 }

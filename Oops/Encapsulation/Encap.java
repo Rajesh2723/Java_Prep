@@ -12,7 +12,15 @@ public class Encap {
 
     public void Deposit(double amount){
         if(amount>0)balance+=amount;
-    }   
+    }
+    
+    public void setBalance(double balance){
+        if(balance<0){
+            throw new IllegalArgumentException("Balance cant be negetive");
+        }else{
+            this.balance=balance;
+        }
+    }
 }
 
 // //Abstraction -- exposing what an object does, hiding HOW ======
